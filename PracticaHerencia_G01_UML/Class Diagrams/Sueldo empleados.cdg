@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Sueldo empleados">
+  <ClassDiagramComponents>
+    <Class name="EmpleadoBasico" package="" visibility="public" xPosition="447.0" yPosition="80.0">
+      <Fields>
+        <Field name="nHorasMes" type="int" visibility="private"/>
+        <Field name="pHora" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getSueldo" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EmpleadoComision" package="" visibility="public" xPosition="738.0" yPosition="161.0">
+      <Fields>
+        <Field name="comisionVentas" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getSueldo" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="EmpleadoComision" target="EmpleadoBasico"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
